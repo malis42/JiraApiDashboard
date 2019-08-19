@@ -1,11 +1,10 @@
 <?php
 
-namespace controllers;
-use models\dbFetchModel;
-use models\dbPushModel;
-use models\jiraSearchModel;
+namespace SALESmanago\Controllers;
+use SALESmanago\Models\JiraSearchModel;
+use SALESmanago\Models\DbFetchModel;
 
-class frontInit
+class FrontInit
 {
     private $fetchModel;
     private $jsonFetchedData;
@@ -14,7 +13,7 @@ class frontInit
 
     public function __construct()
     {
-        $this->fetchModel = new dbFetchModel();
+        $this->fetchModel = new DbFetchModel();
         $this->jsonFetchedData = json_decode($this->fetchModel->fetchData(), true);
         $this->fetchedTimestamp = $this->fetchModel->fetchTimestamp();
     }

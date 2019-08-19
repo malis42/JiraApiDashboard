@@ -1,8 +1,8 @@
 <?php
-namespace controllers;
-use libs\controllerCore;
+namespace SALESmanago\Controllers;
+use SALESmanago\Libs\ControllerCore;
 
-class appError extends controllerCore {
+class AppError extends ControllerCore {
     public function __construct()
     {
         parent::__construct();

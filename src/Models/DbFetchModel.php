@@ -1,9 +1,8 @@
 <?php
-namespace models;
+namespace SALESmanago\Models;
+use SALESmanago\Database\myDatabase;
 
-use database\myDatabase;
-
-class dbFetchModel
+class DbFetchModel
 {
     private $db;
     private $string;

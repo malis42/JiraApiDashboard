@@ -1,10 +1,9 @@
 <?php
-namespace controllers;
+namespace SALESmanago\Controllers;
+use SALESmanago\Libs\ControllerCore;
+use SALESmanago\Models\DbPushModel;
 
-use libs\controllerCore;
-use models\dbPushModel;
-
-class refresh extends controllerCore
+class Refresh extends ControllerCore
 {
     private $pushModel;
 
@@ -12,7 +11,7 @@ class refresh extends controllerCore
     {
         parent::__construct();
         //$this->view->render('refresh');
-        $this->pushModel = new dbPushModel();
+        $this->pushModel = new DbPushModel();
         $this->pushModel->pushData();
         $this->pushModel->closeConn();
         return true;

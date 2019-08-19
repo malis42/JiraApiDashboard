@@ -1,4 +1,4 @@
-<?php if(!isset($_SESSION['email'])){header('Location: index');} ?>
+<?php if(!isset($_SESSION['email'])){header('Location: Index');} ?>
 <div class="jumbotron sticky-top">
     <div class="row">
         <div class="col-lg-4">
@@ -8,8 +8,8 @@
         <div class="col-lg-4">
             <span style="text-align: center;">
                 <br/>
-                <h5>Timestamp of last data refresh: <br/> <?php  use controllers\frontInit;
-                    $frontController = new frontInit();
+                <h5>Timestamp of last data refresh: <br/> <?php  use SALESmanago\Controllers\FrontInit;
+                    $frontController = new FrontInit();
                     $frontController->loadTimestamp(); ?>
                 </h5>
                 <input type="submit" class="btn btn-success" value="Refresh data" name="refreshBtn" onclick="OnActionClick()"/>
@@ -19,7 +19,7 @@
             <br/>
             <h5>You're logged in as: <br/>
             <?php echo $_SESSION['email'] ?></h5>
-            <form action="logout" method="post">
+            <form action="Logout" method="post">
                 <input type="submit" class="btn btn-danger" value="Logout" name="logout"/>
             </form>
         </div>
@@ -50,4 +50,4 @@
         </table>
     </div>
 </div>
-<script src="../assets/js/OnActionClick.js"></script>
+<script src="../../assets/js/OnActionClick.js"></script>

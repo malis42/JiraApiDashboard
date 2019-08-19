@@ -1,11 +1,10 @@
 <?php
-namespace models;
-require '../vendor/autoload.php';
+namespace SALESmanago\Models;
 
 use JiraRestApi\Issue\IssueService;
 use JiraRestApi\JiraException;
 
-class jiraSearchModel
+class JiraSearchModel
 {
     private $jql;
     private $issueArr;

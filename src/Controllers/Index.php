@@ -1,8 +1,8 @@
 <?php
-namespace controllers;
-use libs\controllerCore;
+namespace SALESmanago\Controllers;
+use SALESmanago\Libs\ControllerCore;
 
-class index extends controllerCore {
+class Index extends ControllerCore {
     function __construct()
     {
         parent::__construct();

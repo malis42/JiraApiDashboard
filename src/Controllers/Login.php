@@ -1,9 +1,9 @@
 <?php
-namespace controllers;
+namespace SALESmanago\Controllers;
+use SALESmanago\Database\myDatabase;
+use SALESmanago\Libs\ControllerCore;
 
-use database\myDatabase;
-
-class login
+class Login extends ControllerCore
 {
     private $db;
     private $sql = "SELECT token FROM users WHERE email = :email";

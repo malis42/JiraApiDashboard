@@ -1,5 +1,5 @@
 <?php
-namespace database;
+namespace SALESmanago\Database;
 
 class myDatabase
 {

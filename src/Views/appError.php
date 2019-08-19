@@ -3,6 +3,6 @@
 <br/>
 <h2>Page not found!</h2>
 <br/>
-<form action="../public/index.php" method="post">
+<form action="../../public/Index" method="post">
     <input type="submit" class="btn btn-warning" value="Back to start"/>
 </form>
