@@ -1,0 +1,14 @@
+{
+    "require": {
+        "vlucas/phpdotenv": "*",
+        "lesstif/php-jira-rest-client": "^1.41"
+    },
+    "autoload": {
+        "psr-4": {
+            "libs\\": "libs/",
+            "controllers\\" : "controllers/",
+            "models\\" : "models/",
+            "database\\" : "database/"
+        }
+    }
+}

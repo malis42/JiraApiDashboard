@@ -1,0 +1,4 @@
+[2019-08-06 15:35:07] JiraClient.ERROR: CURL Error: http response=0, Could not resolve proxy: your-proxy-server [] []
+[2019-08-07 08:11:58] JiraClient.ERROR: CURL Error: http response=0, Could not resolve proxy: your-proxy-server [] []
+[2019-08-07 08:11:59] JiraClient.ERROR: CURL Error: http response=0, Could not resolve proxy: your-proxy-server [] []
+[2019-08-07 08:11:59] JiraClient.ERROR: CURL Error: http response=0, Could not resolve proxy: your-proxy-server [] []

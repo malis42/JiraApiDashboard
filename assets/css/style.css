@@ -1,0 +1,70 @@
+body, html {
+    height: 100%;
+    width:100%;
+    text-align: center;
+   /* background:#dcdcdc;*/
+    margin:0;
+    padding:0;
+    position: absolute;
+    overflow: auto;
+}
+
+.jumbotron{
+    position: sticky;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.table{
+     margin-bottom: 0;
+}
+
+
+
+#preloader {
+    position: fixed;
+    min-height: 500px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    /* change if the mask should have another color then white */
+    z-index: 9999;
+    /* makes sure it stays on top */
+    display: none;
+    opacity: 0.8;
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+}
+
+table.dataTable thead .sorting:after { background: url('/assets/img/sort_both.png') no-repeat center right; }
+table.dataTable thead .sorting:before { background: url('/assets/img/sort_both.png') no-repeat center right; }
+table.dataTable thead .sorting_asc:after { background: url('/assets/img/sort_asc.png') no-repeat center right; }
+table.dataTable thead .sorting_asc:before { background: url('/assets/img/sort_asc.png') no-repeat center right; }
+table.dataTable thead .sorting_asc_disabled:after { background: url('/assets/img/sort_asc_disabled.png') no-repeat center right; }
+table.dataTable thead .sorting_asc_disabled:before { background: url('/assets/img/sort_asc_disabled.png') no-repeat center right; }
+table.dataTable thead .sorting_desc:after { background: url('/assets/img/sort_desc.png') no-repeat center right; }
+table.dataTable thead .sorting_desc:before { background: url('/assets/img/sort_desc.png') no-repeat center right; }
+table.dataTable thead .sorting_desc_disabled:after { background: url('/assets/img/sort_desc_disabled.png') no-repeat center right; }
+table.dataTable thead .sorting_desc_disabled:before {
+    bottom: .5em;
+    background: url('/assets/img/sort_desc_disabled.png') no-repeat center right;
+}
