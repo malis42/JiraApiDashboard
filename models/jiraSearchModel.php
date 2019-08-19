@@ -1,6 +1,6 @@
 <?php
 namespace models;
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
 use JiraRestApi\Issue\IssueService;
 use JiraRestApi\JiraException;

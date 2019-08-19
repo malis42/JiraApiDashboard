@@ -21,27 +21,27 @@ class bootstrap
         $path = ltrim($url['path'], '/');
         $path = explode('/', $path);
         //var_dump($path);
-        if(empty($path[0])){
+        if(empty($path[1])){
             $controller = new index();
             return false;
         }
-        $ctrlFile = 'controllers/' . $path[0] . '.php';
+        $ctrlFile = '../controllers/' . $path[1] . '.php';
         if (file_exists($ctrlFile)) {
             require $ctrlFile;
         } else {
-            require_once 'controllers/appError.php';
+            require_once '../controllers/appError.php';
             $controller = new appError();
             return false;
             //throw new Exception("The file {$ctrlFile} does not exist!");
         }
 
-        if($path[0] == 'index'){
+        if($path[1] == 'index'){
             $controller = new index();
-        } else if ($path[0] == 'search'){
+        } else if ($path[1] == 'search'){
             $controller = new search();
-        } else if ($path[0] == 'refresh'){
+        } else if ($path[1] == 'refresh'){
             $controller = new refresh();
-        } else if ($path[0] == 'login'){
+        } else if ($path[1] == 'login'){
             $controller = new login();
             $controller->setEmail($_POST['email']);
             if($controller->checkToken($_POST['token']) == 'true'){
@@ -50,7 +50,7 @@ class bootstrap
             } else {
                 header('Location: index');
             }
-        } else if ($path[0] == 'logout'){
+        } else if ($path[1] == 'logout'){
             $controller = new logout();
             header('Location: index');
         }

@@ -1,6 +1,6 @@
 .idea/
-.htaccess
+public/.htaccess
 .env
-.jira-rest-client.log
-.access.log
-.error.log
+jira-rest-client.log
+access.log
+error.log
