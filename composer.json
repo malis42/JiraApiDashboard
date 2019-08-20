@@ -5,10 +5,7 @@
     },
     "autoload": {
         "psr-4": {
-            "libs\\": "libs/",
-            "controllers\\" : "controllers/",
-            "models\\" : "models/",
-            "database\\" : "database/"
+            "SALESmanago\\": "src/"
         }
     }
 }

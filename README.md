@@ -12,3 +12,4 @@ If you're connected to JIRA Cloud Platform make sure to enable option:
 ```
 JIRA_REST_API_V3=true
 ```
+
