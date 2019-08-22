@@ -1,25 +1,36 @@
-<?php if(!isset($_SESSION['email'])){header('Location: Index');} ?>
+<?php
+
+if (!isset($_SESSION['email'])) header('Location: Index');
+
+?>
 <div class="jumbotron sticky-top">
     <div class="row">
         <div class="col-lg-4">
-            <a href="https://www.salesmanago.pl" target="_blank"><img src="/assets/img/logo.png" style="height: 100px; width: auto; margin-left: 10px; margin-top: 10px;"></a>
+            <a href="https://www.salesmanago.pl" target="_blank"><img src="http://support.salesmanago.com/external/jira/emred/assets/img/logo.png"
+                                                                      style="height: 100px; width: auto; margin-left: 10px; margin-top: 10px;"></a>
             <br/>
         </div>
         <div class="col-lg-4">
-            <span style="text-align: center;">
-                <br/>
-                <h5>Timestamp of last data refresh: <br/> <?php  use SALESmanago\Controllers\FrontInit;
+            <span style="text-align: center;"><br/>
+                <p style="font-weight: bolder">Last refresh: <br/>
+                    <?php
+
+                    use SALESmanago\Controllers\FrontInit;
+
                     $frontController = new FrontInit();
-                    $frontController->loadTimestamp(); ?>
-                </h5>
-                <input type="submit" class="btn btn-success" value="Refresh data" name="refreshBtn" onclick="OnActionClick()"/>
+                    $frontController->loadTimestamp();
+
+                    ?>
+                </p>
+                <input type="submit" class="btn btn-success" value="Refresh list" name="refreshBtn"
+                       onclick="OnActionClick()"/>
             </span>
         </div>
         <div class="col-lg-4">
             <br/>
-            <h5>You're logged in as: <br/>
-            <?php echo $_SESSION['email'] ?></h5>
-            <form action="Logout" method="post">
+            <p style="font-weight: bolder">Logged user: <br/>
+                <?php echo $_SESSION['email'] ?></p>
+            <form action="http://support.salesmanago.com/external/jira/emred/public/index/Logout" method="post">
                 <input type="submit" class="btn btn-danger" value="Logout" name="logout"/>
             </form>
         </div>
@@ -50,4 +61,4 @@
         </table>
     </div>
 </div>
-<script src="../../assets/js/OnActionClick.js"></script>
+<script src="http://support.salesmanago.com/external/jira/emred/assets/js/OnActionClick.js"></script>

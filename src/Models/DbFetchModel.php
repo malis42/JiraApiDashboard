@@ -1,5 +1,7 @@
 <?php
+
 namespace SALESmanago\Models;
+
 use SALESmanago\Database\myDatabase;
 
 class DbFetchModel
@@ -19,12 +21,14 @@ class DbFetchModel
         return $this->string;
     }
 
-    public function fetchTimestamp() {
+    public function fetchTimestamp()
+    {
         $this->timestamp = $this->db->fetch("SELECT timestamp FROM tasks WHERE id='1'");
         return $this->timestamp;
     }
 
-    public function closeConn() {
+    public function closeConn()
+    {
         $this->db = null;
     }
 }
