@@ -1,10 +1,10 @@
-#Jira Dasbhoard for EMRED
+#Jira Dasbhoard
 #Getting Started
 To correctly set up this dashboard make sure to config the .env file
 
-JIRA_HOST="https://salesmanago.atlassian.net"
-JIRA_USER="username@salesmanago.pl"
-JIRA_PASS="jira-apitoken"
+JIRA_HOST=""
+JIRA_USER=""
+JIRA_PASS=""
 
 Create .env in Database folder which will contain:
 
